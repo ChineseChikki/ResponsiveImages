@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/Thumblins/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#" class="icon open" id="btn">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="mobile-items" id="mobileMenu">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="main">
+          <h1>Responsive Image Grid</h1>
+          <p>Resize the browser window to see the responsive effect.</p>
+        </div>
+      </section>
+      <!-- Photo Grid -->
+      <section>
+        <div class="row">
+          <div class="column">
+            <img
+              src="/Thumblins/thumbnail-1.webp"
+              alt="Men"
+              style="width: 100%"
+            />
+            <img
+              src="/Thumblins/thumbnail-2.webp"
+              alt="Boy"
+              style="width: 100%"
+            />
+            <img
+              src="/Thumblins/thumbnail-3.webp"
+              alt="Girl"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              src="/Thumblins/thumbnail-4.webp"
+              alt="Men"
+              style="width: 100%"
+            />
+            <img
+              src="/Thumblins/thumbnail-5.webp"
+              alt="Boy"
+              style="width: 100%"
+            />
+            <img
+              src="/Thumblins/thumbnail-6.webp"
+              alt="Girl"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              src="/Thumblins/thumbnail-7.webp"
+              alt="Men"
+              style="width: 100%"
+            />
+            <img
+              src="/Thumblins/thumbnail-8.webp"
+              alt="Boy"
+              style="width: 100%"
+            />
+            <img
+              src="/Thumblins/thumbnail-9.webp"
+              alt="Girl"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
