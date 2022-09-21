@@ -2,25 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  position: relative;
-}
-
-/* header part */
-.nav {
-  background-color: rgb(11, 10, 10);
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-.nav a {
+/* nav part */
+.nav-items a {
   display: flex;
   color: white;
   text-align: center;
@@ -29,34 +19,12 @@ header {
   font-size: 1.063rem;
 }
 
-.nav a:hover {
-  background-color: rgb(18, 2, 108);
-  color: #fff;
-}
-
-.nav a:active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-/* Hide the link that should open and close the nav on small screens */
-.nav .icon {
-  display: none;
-}
-
-.icon.open {
-  position: absolute;
-  background: rgb(218, 216, 216);
-  top: 0;
-  right: 0;
-}
-
 .main {
   text-align: center;
-  padding: 2rem;
-  background: rgb(99, 101, 99);
-  color: white;
-  font-size: 1.5rem;
+  padding: 1rem;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
 }
 
 .mobile-items {
@@ -102,6 +70,22 @@ header {
 .column img {
   margin-top: 0.5rem;
   vertical-align: middle;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  padding-top: 20px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav (.icon) */
